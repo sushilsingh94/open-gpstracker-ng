@@ -87,7 +87,7 @@ class TrackListViewAdapter(val context: Context) : RecyclerView.Adapter<TrackLis
         if (holder.binding.viewModel != modelForUri) {
             holder.binding.viewModel = modelForUri
         }
-        willDisplayTrack(holder.itemView.context, holder.binding.viewModel)
+        willDisplayTrack(holder.itemView.context, holder.binding.viewModel!!)
     }
 
     //region Row callbacks
